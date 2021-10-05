@@ -1,0 +1,133 @@
+/* global rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.background-container {
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    overflow: hidden;
+}
+.background {
+    position: relative;
+}
+img.top {
+    width: 61%;
+    position: absolute;
+    top: -400px;
+    left: -238px;
+}
+img.bottom {
+    width: 61%;
+    position: absolute;
+    top: 260px;
+    right: -214px;
+}
+@media (max-width: 767px) {
+    img.top {
+        width: 400px;
+        position: absolute;
+        left: -166px;
+        top: -72px;
+    }
+    img.bottom {
+        width: 388px;
+        position: absolute;
+        right: -164px;
+        top: 480px;
+    }
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end global rules */
+
+/* card */
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+.card::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    border-top: 1px solid hsl(0, 0%, 59%) ;
+    bottom: 85px;
+}
+.card img.banner {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.card img.prof {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    left: 102px;
+    top: 75px;
+}
+.text {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+}
+.text h3 {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.text span {
+    font-weight: 400;
+    margin-left: 5px;
+    color: hsl(227, 10%, 46%);
+}
+.text p {
+    margin-top: 10px;
+    color: hsl(227, 10%, 46%);
+}
+.stats {
+    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+}
+.stats h4 {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+.stats p {
+    color: hsl(227, 10%, 46%);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
